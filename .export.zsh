@@ -1,8 +1,6 @@
 export HISTSIZE=0
 export SAVEHIST=0
 
-export SHELL='/usr/bin/zsh'
-export TERM='xterm-256color'
 export PIP_CONFIG_FILE=$HOME/.pip/pip.conf
 export XDG_DATA_HOME=$HOME/.xdg/
 export LANGUAGE='en_US.UTF-8'
@@ -24,6 +22,9 @@ case `uname` in
 esac
 
 if [ -f /.dockerenv ]; then
+    export SHELL='/usr/bin/zsh'
+    export TERM='xterm-256color'
+
     export GOPATH=/.go
     export PATH=/.cargo/bin:$PATH
 else

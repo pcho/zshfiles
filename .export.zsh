@@ -22,7 +22,6 @@ case `uname` in
 esac
 
 if [ -f /.dockerenv ]; then
-    export SHELL='/usr/bin/zsh'
     export TERM='xterm-256color'
 
     export GOPATH=/.go

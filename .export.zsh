@@ -38,4 +38,6 @@ export PATH=$PATH:~/.bin
 export PATH=$PATH:~/.yarn/bin
 export PATH=$PATH:~/.bin/.setup
 
+export PATH=$HOME/.local/bin:$PATH
 export PATH=/usr/local/sbin:$PATH
+export PATH=$HOME/.swift/usr/bin:$PATH

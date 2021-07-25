@@ -11,8 +11,14 @@ setopt extended_glob
 setopt always_to_end
 setopt path_dirs
 
+setopt hist_ignore_all_dups
+setopt hist_save_no_dups
+setopt hist_reduce_blanks
+setopt inc_append_history_time
+setopt extended_history
+
 unsetopt share_history
+unsetopt append_history
 unsetopt flow_control
 unsetopt menu_complete
 unsetopt case_glob
-unsetopt append_history

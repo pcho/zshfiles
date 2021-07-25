@@ -1,5 +1,6 @@
-export HISTSIZE=0
-export SAVEHIST=0
+HISTFILE=~/.dotfiles/.zsh/history
+HISTSIZE=32768
+SAVEHIST=32768
 
 export PIP_CONFIG_FILE=$HOME/.pip/pip.conf
 export XDG_DATA_HOME=$HOME/.xdg/

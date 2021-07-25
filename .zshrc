@@ -1,4 +1,4 @@
-PROMPT='%F{004}(%n)%f %T %c $ '
+PROMPT='%F{004}(%n)%f %T %~ $ '
 
 bindkey -v
 

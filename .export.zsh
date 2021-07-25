@@ -26,9 +26,12 @@ if [ -f /.dockerenv ]; then
     export TERM='xterm-256color'
 
     export GOPATH=/.go
-    export PATH=/.cargo/bin:$PATH
+    export CARGO_HOME=/usr/local/cargo
+
+    export PATH=/.gem/bin:$PATH
+    export PATH=/user/local/cargo/bin:$PATH
 else
-    export GOPATH=~/.go
+    export GOPATH=$HOME/.go
     export PATH=$HOME/.cargo/bin:$PATH
 fi
 

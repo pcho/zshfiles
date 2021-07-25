@@ -20,7 +20,7 @@ function _pip_completion {
 
 compctl -K _pip_completion pip3
 
-if [[ ! "$PATH" == */home/ubuntu/.fzf/bin* ]]; then
+if [[ ! "$PATH" == */$HOME/.fzf/bin* ]]; then
   export PATH="${PATH:+${PATH}:}$HOME/.fzf/bin"
 fi
 

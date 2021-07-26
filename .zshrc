@@ -9,6 +9,12 @@ source $ZDOTDIR/.export.zsh
 source $ZDOTDIR/.complete.zsh
 source $ZDOTDIR/.options.zsh
 
+function zvm_after_init() {
+  [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+}
+
+source $ZDOTDIR/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+
 function _pip_completion {
   local words cword
   read -Ac words
@@ -20,10 +26,4 @@ function _pip_completion {
 
 compctl -K _pip_completion pip3
 
-if [[ ! "$PATH" == */$HOME/.fzf/bin* ]]; then
-  export PATH="${PATH:+${PATH}:}$HOME/.fzf/bin"
-fi
-
-[[ $- == *i* ]] && source "$HOME/.fzf/shell/completion.zsh" 2> /dev/null
-
-source "$HOME/.fzf/shell/key-bindings.zsh"
+source "$HOME/.fzf.zsh"

@@ -13,6 +13,7 @@ export PAGER='less'
 export LESS='-F -g -i -M -R -S -w -X -z-4'
 export EDITOR='vim'
 export VISUAL='vim'
+export FZF_DEFAULT_COMMAND='fdfind --type f --hidden --follow --exclude .git'
 
 case `uname` in
     Darwin)

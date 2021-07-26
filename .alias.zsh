@@ -38,7 +38,6 @@ alias pipupa='pip install -U $(pip freeze | cut -d "=" -f 1)'
 alias cleanpip='pip uninstall -y -r <(pip freeze)'
 
 alias addgit='eval `ssh-agent -s` ssh-add ~/.ssh/git'
-alias addhub='eval `ssh-agent -s` ssh-add ~/.ssh/hub'
 
 alias b='cdDir(){ cd $HOME/.bin/$1; };cdDir'
 alias d='cdDir(){ cd $HOME/.dotfiles/$1; };cdDir'

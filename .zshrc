@@ -9,12 +9,6 @@ source $ZDOTDIR/.export.zsh
 source $ZDOTDIR/.complete.zsh
 source $ZDOTDIR/.options.zsh
 
-function zvm_after_init() {
-  [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-}
-
-source $ZDOTDIR/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
-
 function _pip_completion {
   local words cword
   read -Ac words

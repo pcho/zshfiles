@@ -55,6 +55,8 @@ case `uname` in
         alias supk='sudo apt-key adv --refresh-keys --keyserver keyserver.ubuntu.com'
         alias ls='ls -la --color=auto'
         alias dev='cdDir(){ cd $HOME/.dev/$1; };cdDir'
+        alias cad='cdDir(){ cd $HOME/.cad/$1; };cdDir'
+        alias sky='cdDir(){ cd $HOME/.sky/$1; };cdDir'
         alias snc='cdDir(){ cd $HOME/.sync/$1; };cdDir'
         ;;
 esac

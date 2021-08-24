@@ -1,3 +1,9 @@
+autoload -Uz vcs_info
+
+precmd_vcs_info() { vcs_info  }
+precmd_functions+=( precmd_vcs_info  )
+
+RPROMPT=\$vcs_info_msg_0_
 PROMPT='%F{004}(%n)%f %T %~ $ '
 
 bindkey -v

@@ -1,6 +1,7 @@
 autoload -Uz compinit
 compinit -i -C
 
+zstyle ':vcs_info:git:*' formats '%b'
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 zstyle ':completion:*:*:*:*:*' menu select
 zstyle ':completion:*:matches' group 'yes'

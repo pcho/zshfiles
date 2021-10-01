@@ -42,6 +42,7 @@ export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:~/.bin
 export PATH=$PATH:~/.yarn/bin
 export PATH=$PATH:~/.bin/.setup
+export PATH=$PATH:~/.system-setup
 
 export PATH=$HOME/.local/bin:$PATH
 export PATH=/usr/local/sbin:$PATH

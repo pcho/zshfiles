@@ -27,7 +27,7 @@ alias phps='php -S 127.0.0.1:3000'
 alias pys='python3 -m http.server 3000'
 
 alias hs='hugo server -b http://$(hostname)/ --bind 0.0.0.0'
-alias hsd='rnHsrv(){hugo server --port=3000 --baseUrl="$1" --appendPort=false};rnHsrv'
+alias hsd='rnHsrv(){hugo server --port=3030 --baseUrl="$1" --appendPort=false};rnHsrv'
 alias cdr='cdd(){sudo caddy reverse-proxy --from $1 --to 0.0.0.0:"$2"};cdd'
 
 alias venv='python3 -m venv venv'

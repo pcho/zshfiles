@@ -19,7 +19,7 @@ alias remove='rm -rfv'
 alias vi='vim'
 alias v='vi'
 
-alias pass='openssl rand -base64 32'
+alias pass='date +%s | sha256sum | base64 | head -c 32 ; echo'
 
 alias irc='weechat'
 

@@ -15,34 +15,12 @@ export EDITOR='vim'
 export VISUAL='vim'
 export FZF_DEFAULT_COMMAND='fdfind --type f --hidden --follow --exclude .git --exclude venv'
 
-case `uname` in
-    Darwin)
-        export HOMEBREW_NO_ANALYTICS=1
-        export HOMEBREW_NO_INSECURE_REDIRECT=1
-        export HOMEBREW_INSTALL_BADGE=1
-        ;;
-esac
-
-if [ -f /.dockerenv ]; then
-    export TERM='xterm-256color'
-
-    export GOPATH=/.go
-    export CARGO_HOME=/usr/local/cargo
-
-    export PATH=/.gem/bin:$PATH
-    export PATH=/user/local/cargo/bin:$PATH
-else
-    export GOPATH=$HOME/.go
-    export PATH=$HOME/.cargo/bin:$PATH
-fi
-
+export GOPATH=$HOME/.go
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:/usr/local/go/bin
 
 export PATH=$PATH:~/.bin
-export PATH=$PATH:~/.yarn/bin
 export PATH=$PATH:~/.bin/.setup
-export PATH=$PATH:~/.system-setup
 
 export PATH=$HOME/.local/bin:$PATH
 export PATH=/usr/local/sbin:$PATH

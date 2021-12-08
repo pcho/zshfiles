@@ -13,7 +13,7 @@ export PAGER='less'
 export LESS='-F -g -i -M -R -S -w -X -z-4'
 export EDITOR='vim'
 export VISUAL='vim'
-export FZF_DEFAULT_COMMAND='fdfind --type f --hidden --follow --exclude .git --exclude venv'
+export FZF_DEFAULT_COMMAND='fdfind --type f --hidden --follow --exclude node_modules --exclude .git --exclude venv'
 
 export GOPATH=$HOME/.go
 export PATH=$PATH:$GOPATH/bin
@@ -21,6 +21,4 @@ export PATH=$PATH:/usr/local/go/bin
 
 export PATH=$PATH:~/.bin
 export PATH=$PATH:~/.bin/.setup
-
-export PATH=$HOME/.local/bin:$PATH
-export PATH=/usr/local/sbin:$PATH
+export PATH=$PATH:~/.yarn/bin

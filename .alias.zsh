@@ -21,7 +21,7 @@ alias pass='date +%s | sha256sum | base64 | head -c 32 ; echo'
 alias sup='sudo apt-get update && sudo apt-get upgrade'
 alias addgit='eval `ssh-agent -s` ssh-add ~/.ssh/git'
 
-alias pys='python3 -m http.server 3000'
+alias pys='python3 -m http.server 3030'
 alias venv='python3 -m venv venv'
 alias vas='. venv/bin/activate'
 alias vad='deactivate'

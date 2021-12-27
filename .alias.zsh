@@ -18,7 +18,7 @@ alias vi='vim'
 alias v='vi'
 
 alias pass='date +%s | sha256sum | base64 | head -c 32 ; echo'
-alias sup='sudo apt-get update && sudo apt-get upgrade'
+alias sup='sudo apt-get update && sudo apt-get upgrade -y'
 alias addgit='eval `ssh-agent -s` ssh-add ~/.ssh/git'
 
 alias pys='python3 -m http.server 3030'

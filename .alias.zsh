@@ -1,5 +1,3 @@
-alias g='git'
-
 alias mv='mv -v'
 alias rm='rm -i -v'
 alias cp='cp -v'
@@ -14,18 +12,10 @@ alias ls='ls -la --color=auto'
 alias pgrep='pgrep -il'
 alias remove='rm -rfv'
 
+alias g='git'
 alias vi='vim'
 alias v='vi'
 
 alias pass='date +%s | sha256sum | base64 | head -c 32 ; echo'
 alias sup='sudo apt-get update && sudo apt-get upgrade'
-
-alias venv='python3 -m venv venv'
-alias vas='. venv/bin/activate'
-alias vad='deactivate'
-
-alias pipup='pip install --upgrade pip'
-alias pipupa='pip install -U $(pip freeze | cut -d "=" -f 1)'
-alias cleanpip='pip uninstall -y -r <(pip freeze)'
-
 alias dev='cdDir(){ cd $HOME/.dev/$1; };cdDir'

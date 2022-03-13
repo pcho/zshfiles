@@ -21,4 +21,3 @@ export PATH=$PATH:/usr/local/go/bin
 
 export PATH=$PATH:~/.bin
 export PATH=$PATH:~/.bin/setup
-export PATH=$PATH:~/.yarn/bin

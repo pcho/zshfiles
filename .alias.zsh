@@ -15,6 +15,7 @@ alias remove='rm -rfv'
 alias g='git'
 alias vi='vim'
 alias v='vi'
+alias p='pnpm'
 
 alias pass='date +%s | sha256sum | base64 | head -c 32 ; echo'
 alias sup='sudo apt-get update && sudo apt-get upgrade'

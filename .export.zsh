@@ -21,3 +21,6 @@ export PATH=$PATH:/usr/local/go/bin
 
 export PATH=$PATH:~/.bin
 export PATH=$PATH:~/.bin/setup
+
+export PNPM_HOME=$HOME/.xdg/pnpm
+export PATH=$PNPM_HOME:$PATH
